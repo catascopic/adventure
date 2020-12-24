@@ -8,8 +8,8 @@ var sprites;
 var canvas;
 var context;
 var map = [
-	[1,1,1,1,1,1,1,1,1,1,1,1],
-	[1,0,0,0,0,0,0,0,0,0,0,1],
+	[1,1,2,1,1,1,1,1,1,1,1,1],
+	[1,0,0,0,0,0,0,0,3,0,0,1],
 	[1,0,0,0,0,0,0,0,0,0,0,1],
 	[1,0,0,0,0,0,0,0,0,0,0,1],
 	[1,0,0,0,0,0,0,0,0,0,0,1],
@@ -31,9 +31,6 @@ function draw() {
 			drawSprite(i, j, map[i][j]);
 		}
 	}
-	// drawSprite(row, col, dir == 1 ? DUDE_RIGHT : DUDE_LEFT);
-	context.font = '32px fixedsys';
-	context.fillText('ADVENTURE GAME', 80, 64);
 }
 
 function drawSprite(i, j, sprite) {
